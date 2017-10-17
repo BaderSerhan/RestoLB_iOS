@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>130554266511-j15ba7592pqs7s3irqhfgtdjo3s3kqfn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.130554266511-j15ba7592pqs7s3irqhfgtdjo3s3kqfn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBHGqvK4rsC5NtQi5m0zqjVeG-XB0HE-eQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>130554266511</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.IdeationSoft.RestoLB</string>
+	<key>PROJECT_ID</key>
+	<string>resto-58a5a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>resto-58a5a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:130554266511:ios:fb7c819638864c3b</string>
+	<key>DATABASE_URL</key>
+	<string>https://resto-58a5a.firebaseio.com</string>
+</dict>
+</plist>
