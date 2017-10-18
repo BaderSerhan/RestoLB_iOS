@@ -10,10 +10,11 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 import Toast_Swift
+import IQKeyboardManagerSwift
 
 var fromOrder = false
 
-class makeOrderViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+class makeOrderViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextViewDelegate{
     
     @IBOutlet weak var noname: UITextField!
     @IBOutlet weak var nonumber: UITextField!
@@ -57,6 +58,7 @@ class makeOrderViewController: UIViewController, UITableViewDataSource, UITableV
         super.viewDidLoad()
         
         //self.view.addBackground()
+        IQKeyboardManager.sharedManager().enable = false
         
         noname.isUserInteractionEnabled = false
         nonumber.isUserInteractionEnabled = false
@@ -74,8 +76,6 @@ class makeOrderViewController: UIViewController, UITableViewDataSource, UITableV
         }
         
         self.descriptionTextView.placeholder = "Delivery Notes"
-        dropDownMenuTableView.dataSource = self
-        dropDownMenuTableView.delegate = self
         
         self.dropDownMenuTableView.isHidden = true
         self.dropDownMenuTableView.layer.borderColor = colors.RestoDefaultColor.cgColor
@@ -160,6 +160,16 @@ class makeOrderViewController: UIViewController, UITableViewDataSource, UITableV
                 }
             }
         })
+        dropDownMenuTableView.dataSource = self
+        dropDownMenuTableView.delegate = self
+        descriptionTextView.delegate = self
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        self.descriptionTextView.placeholder = ""
+        if !dropDownMenuTableView.isHidden {
+            dropDownMenuTableView.isHidden = true
+        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -174,6 +184,7 @@ class makeOrderViewController: UIViewController, UITableViewDataSource, UITableV
         let cell: UITableViewCell = self.dropDownMenuTableView.dequeueReusableCell(withIdentifier: "cellOfDropDownMenu")!
         cell.textLabel?.text = self.ArrayOfAddresses[indexPath.row].gettitle()
         cell.selectionStyle = UITableViewCellSelectionStyle.none
+        cell.textLabel?.textColor = colors.RestoDefaultColor
         return cell
     }
     

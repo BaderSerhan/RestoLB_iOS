@@ -38,10 +38,11 @@ class RatingViewController: UIViewController {
     var typesOpts : [[String]] = []
     var typesIDs : [[Int]] = []
     
+    var radioGroup = [DLRadioButton]()
+    
      func dismissKeyboard() {
         view.endEditing(true)
     }
-    
     func makeCheckBox(_ text:String) -> DLRadioButton {
         let myButton = DLRadioButton(type: .custom)
         
@@ -49,11 +50,11 @@ class RatingViewController: UIViewController {
         //myButton.titleLabel?.adjustsFontSizeToFitWidth = true
         
         myButton.setTitle(text, for: .normal)
-        myButton.isMultipleSelectionEnabled = true
-        myButton.isIconSquare = false
+        myButton.isMultipleSelectionEnabled = false
+        myButton.isIconSquare = true
         myButton.iconColor = colors.RestoDefaultColor
         myButton.setTitleColor(colors.RestoDefaultColor, for: .normal)
-        
+        myButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
         return myButton
     }
     let border = CALayer()

@@ -42,7 +42,7 @@ class navigationDrawerMenuViewController: UIViewController,UITableViewDataSource
            menuTitles = ["Menu","Tray","Announcements", "Login"]
         } else {
             if let _:String = preferences.object(forKey: sessiontokenkey) as? String{
-                menuTitles = ["Menu","Tray","Announcements", "Profile", "Address", "Order History", "Logout"]
+                menuTitles = ["Menu","Tray","Announcements", "Profile", "Addresses", "Order History", "Logout"]
             }
         }
         headerImage.superview?.layoutIfNeeded()
@@ -100,7 +100,7 @@ class navigationDrawerMenuViewController: UIViewController,UITableViewDataSource
             self.dismiss(animated: true, completion: nil)
             self.navigationController!.pushViewController(vc, animated: true)
             
-        }else if currentCell?.textLabel?.text == "Address"{
+        }else if currentCell?.textLabel?.text == "Addresses"{
             let vc = storyboard.instantiateViewController(withIdentifier: "addressView")
             self.dismiss(animated: true, completion: nil)
             self.navigationController!.pushViewController(vc, animated: true)
