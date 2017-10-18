@@ -70,7 +70,6 @@ class FoodItemsViewController: UIViewController, UICollectionViewDelegate, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 //        foodItemCell.backgroundView = backgroundView
         self.navigationItem.title = selectedCategory
         self.view.makeToastActivity(.center)
@@ -125,6 +124,9 @@ class FoodItemsViewController: UIViewController, UICollectionViewDelegate, UICol
             cell.itemImage.kf.setImage(with: url) //= UIImage(data: self.foodItems[indexPath.row].imageData!)
         }
         cell.itemImage.image = self.foodItems[indexPath.row].imageUI
+        
+        cell.trayButton.layer.masksToBounds = true
+        cell.trayButton.layer.cornerRadius = 5.0
         cell.trayButton.categoryID = Int(selectedCategoryID)!
         cell.trayButton.categoryName = selectedCategory
         cell.trayButton.index = indexPath.row

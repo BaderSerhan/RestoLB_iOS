@@ -10,6 +10,7 @@ import UIKit
 
 class FoodItemCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var backView: UIView!
     @IBOutlet weak var itemImage: UIImageView!
     @IBOutlet weak var itemName: UILabel!
     @IBOutlet weak var itemDescription: UILabel!
@@ -27,5 +28,6 @@ class FoodItemCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         //self.addBackground()
+        backView.backgroundColor = UIColor(red: 170/255, green: 170/255, blue: 170/255, alpha: 0.8)
     }
 }
