@@ -126,7 +126,7 @@ class FoodItemsViewController: UIViewController, UICollectionViewDelegate, UICol
         cell.itemImage.image = self.foodItems[indexPath.row].imageUI
         
         cell.trayButton.layer.masksToBounds = true
-        cell.trayButton.layer.cornerRadius = 5.0
+        cell.trayButton.layer.cornerRadius = 2.0
         cell.trayButton.categoryID = Int(selectedCategoryID)!
         cell.trayButton.categoryName = selectedCategory
         cell.trayButton.index = indexPath.row
