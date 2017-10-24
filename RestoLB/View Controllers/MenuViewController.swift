@@ -49,6 +49,7 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
         collectionView.delegate=self
         collectionView.dataSource=self
         
+        SideMenuManager.menuFadeStatusBar = false
         let menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "sideMenu") as! UISideMenuNavigationController
         SideMenuManager.default.menuLeftNavigationController = menuLeftNavigationController
         SideMenuManager.default.menuAddPanGestureToPresent(toView: self.view)
