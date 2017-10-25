@@ -22,7 +22,7 @@ class FoodItemCollectionViewCell: UICollectionViewCell {
         itemDescription.text = ""
         itemName.text = ""
         itemPrice.text = ""
-        itemImage.image = UIImage()
+        //itemImage.image = UIImage()
         super.prepareForReuse()
     }
     

@@ -81,11 +81,10 @@ class navigationDrawerMenuViewController: UIViewController,UITableViewDataSource
             self.navigationController!.pushViewController(vc, animated: true)
             
         }else if currentCell?.textLabel?.text == "Menu"{
-            //if already in menu
+
+            vc = storyboard.instantiateViewController(withIdentifier: "menuView")
             self.dismiss(animated: true, completion: nil)
-            //else
-//            vc = storyboard.instantiateViewController(withIdentifier: "menuView")
-//            self.navigationController!.pushViewController(vc, animated: true)
+            self.navigationController!.pushViewController(vc, animated: true)
             
         }else if currentCell?.textLabel?.text == "Tray"{
             let tray = storyboard.instantiateViewController(withIdentifier: "trayView") as! TrayViewController

@@ -33,17 +33,17 @@ class FoodItem {
         self.imageData = try? Data(contentsOf: URL(string: image)!)
     }
     
-    init(id: Int, name:String, description: String?, price:String, image: UIImage){
-        //, options: [FoodOption]){
-        
-        self.food_id = id
-        self.name = name
-        self.description = description
-        self.itemPrice = price
-//        self.itemImage = image
-//        self.imageData = try? Data(contentsOf: URL(string: image)!)
-        self.imageUI = image
-    }
+//    init(id: Int, name:String, description: String?, price:String, image: UIImage){
+//        //, options: [FoodOption]){
+//
+//        self.food_id = id
+//        self.name = name
+//        self.description = description
+//        self.itemPrice = price
+////        self.itemImage = image
+////        self.imageData = try? Data(contentsOf: URL(string: image)!)
+//        self.imageUI = image
+//    }
     
     func printElements (){
         print ("\n")

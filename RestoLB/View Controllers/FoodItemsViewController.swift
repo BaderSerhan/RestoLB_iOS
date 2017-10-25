@@ -123,7 +123,7 @@ class FoodItemsViewController: UIViewController, UICollectionViewDelegate, UICol
             let url = URL(string: self.foodItems[indexPath.row].itemImage)
             cell.itemImage.kf.setImage(with: url) //= UIImage(data: self.foodItems[indexPath.row].imageData!)
         }
-        cell.itemImage.image = self.foodItems[indexPath.row].imageUI
+        //cell.itemImage.image = self.foodItems[indexPath.row].imageUI
         
         cell.trayButton.layer.masksToBounds = true
         cell.trayButton.layer.cornerRadius = 2.0
