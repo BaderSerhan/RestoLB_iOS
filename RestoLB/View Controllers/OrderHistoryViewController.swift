@@ -211,6 +211,10 @@ class OrderHistoryViewController: UIViewController,UITableViewDataSource, UITabl
             recognizer.numberOfTapsRequired = 1;
             cell.rating.addGestureRecognizer(recognizer)
             recognizer.view?.tag = self.orderNo[indexPath.section]
+            cell.rating.backgroundColor = colors.RestoDefaultColor
+            cell.rating.settings.emptyColor = UIColor.white
+            cell.rating.settings.filledColor = UIColor.white
+            cell.rating.layer.cornerRadius = 5.0
         }
        let count = self.count[indexPath.section]
         var text = "\(String(count)) ("

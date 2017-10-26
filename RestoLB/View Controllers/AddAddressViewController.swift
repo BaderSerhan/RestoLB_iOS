@@ -145,6 +145,7 @@ class AddAddressViewController: UIViewController,UIGestureRecognizerDelegate{
         if preferences.object(forKey: "sessiontokenkey") != nil {
             if let sessiontoken :String = preferences.object(forKey: "sessiontokenkey") as? String{
                 myurl = URLs.addressURL + sessiontoken
+                print(sessiontoken)
             }
         }
     }
