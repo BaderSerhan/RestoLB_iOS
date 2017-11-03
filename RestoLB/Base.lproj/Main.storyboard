@@ -65,7 +65,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtL-mb-fQ6" userLabel="orderNumber">
-                                                    <rect key="frame" x="128" y="9" width="235" height="22"/>
+                                                    <rect key="frame" x="128" y="8" width="235" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="22" id="ngZ-6D-Bhn"/>
                                                         <constraint firstAttribute="width" constant="235" id="xJe-n8-a8T"/>
@@ -184,7 +184,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYm-lm-L96">
-                                                    <rect key="frame" x="96.5" y="9.5" width="5" height="21"/>
+                                                    <rect key="frame" x="96.5" y="8.5" width="5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.20392156859999999" green="0.23921568630000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1165,7 +1165,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vHf-Z4-62G">
-                                <rect key="frame" x="0.0" y="11" width="375" height="395"/>
+                                <rect key="frame" x="0.0" y="31" width="375" height="375"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZvP-iH-tnx">
                                     <size key="itemSize" width="320" height="141"/>
